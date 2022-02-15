@@ -19,7 +19,6 @@ export function render(data) {
     idUser.classList.add('card-text');
     const btnBody = document.createElement('a');
     btnBody.classList.add('btn-primary', 'btn');
-   
 
     productCard.appendChild(id);
     productCard.appendChild(title);
@@ -43,13 +42,9 @@ export function render(data) {
       
       let {render} = await import ('./item-film.js');
       document.querySelector('#app').append(render(data));
-
-      
-    })
-    
+    });
     container.appendChild(elemWrap);
   }
-
   return container
 }
 
